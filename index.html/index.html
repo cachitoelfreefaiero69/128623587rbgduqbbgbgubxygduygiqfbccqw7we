@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasa la tarea Paula</title>
+    <link rel="shortcut icon" type="image/png" href="file:///C:/Users/52962/Downloads/Imágenes/clashroyale.png">
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            background-color: #d2f7c9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #1c1c1c;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 24px;
+            color: #1c1c1c;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #ffffff;
+            font-size: 24px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pasa las tareas de lunes a viernes</h1>
+        <p>Hols mundo</p>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="file">Seleccionar imagen:</label>
+            <input type="file" name="file" id="file">
+            <input type="submit" name="submit" value="Subir imagen">
+        </form>
+    </div>
+</body>
+</html>
